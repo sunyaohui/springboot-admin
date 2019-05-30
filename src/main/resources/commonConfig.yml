@@ -1,0 +1,16 @@
+#swagger配置
+swagger:
+
+  #swagger2不生成api文档的url
+  swaggerFilterUrl:
+    - /error.*
+
+#拦截器    
+interceptor:
+
+  #拦截器不进行拦截的url    
+  loginInterceptor:
+    - /swagger-resources/**
+    - /v2/api-docs
+
+    
